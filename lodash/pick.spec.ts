@@ -1,8 +1,9 @@
-import assert from "assert";
+import * as assert from "assert";
 import _ from "lodash";
+import "mocha"
 
 describe(``, () => {
-    it(`pick arr`, async () =>  {
+    it(`pick arr`, async () => {
         const arr = [{ id: 1, name: "zhangsan" }, { id: 2, name: "lisi" }];
         const aName = _.pick(arr, ["name"]);
         console.log(aName);
